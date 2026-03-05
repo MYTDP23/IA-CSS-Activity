@@ -1,0 +1,70 @@
+/* Write your CSS here */
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.product-card {
+    display: flex;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-info {
+    padding:24px;
+}
+
+.product-info h1{
+    margin-bottom: 10px;
+}
+
+.product-info p{
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #587459;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a4b3b;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c34545;
+}
+
+@media (max-width: 768px) {
+
+    .product-card {
+        flex-direction: column;
+    }
+
+    .product-card img{
+        width: 100%;
+    }
+
+}
